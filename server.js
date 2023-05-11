@@ -109,10 +109,8 @@ app.post('/uploadimg', (req, res) => {
             req.files.files.mv(pathmove, (err) => {
                 if (err) {
                     console.log(err);
-                    // return res.status(500).send(err);
                 }
                 console.log(pathmove);
-                // res.send(pathmove);
             })
         })
     } catch (error) {
